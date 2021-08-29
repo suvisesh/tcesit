@@ -51,12 +51,19 @@
 
     .dropdown:hover .dropbtn {background-color: grey; color: whitesmoke; border: 2px;}
 
+    #add_new:hover
+    {
+        background-color: red !important;
+
+    }
+
     .sidenav {
-      width: 250px;
-        position: relative;
+      width: 290px;
+        /*position: relative;*/
       z-index: 1;
       top: 0px;
-      left: 10px;
+      left: -100px;
+      right: 100px;
       background: #eee;
       overflow-x: hidden;
       padding: 8px 0;
@@ -65,8 +72,9 @@
      {
       padding: 6px 8px 6px 16px;
       text-decoration: none;
-      font-size: 16px;
-      color: #2196F3;
+      font-size: 14px;
+      font-weight: bold;
+      color: #007BFF;
       display: block;
       border:  2px solid grey;
     }
@@ -104,18 +112,17 @@
           <div class="container py-3 mt-3" style="margin-top: 20px;">
             <div class="row">
                 <div class="col-6">
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button class="dropbtn" style="border-radius: 6px;"> My Projects</button>
                 <div class="dropdown-content">
                     <a href="#">My Projects</a>
-                    <a href="#">New Display 1</a>
-                    <a href="#">New Display 2</a>
+                    
 
-                </div>
-            </div>
+                </div> -->
             </div>
             
-            <div class="col-ssm-6" style="margin-left: 270px;">
+            
+            <div class="col-sm-6" style="margin-left: 270px;">
                 <span class="">
                 <form name="searchstudent" method="post"></form>
                 
@@ -128,23 +135,122 @@
                 
             
             </div>
+            </div>
         </div>
+</div>
+ <hr>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <a href="#" class="btn" style="background:#2C5E91; color:white; border-radius: 5px;">My Projects</a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#" class="btn" id="add_new" style="background: #2C5E91; color: white; border-radius: 5px;"><center>+ ADD NEW PROJECT</center></a>
+        </div>
+
+    </div>
+    <div class="row">
+        <br>
+    </div>
+
+    <div class="row">
        
 
        <!-- ----------Side bar starts------------ -->
-       <hr>
+      
 
-       <div class="sidenav">
+       <div class="col-sm-2 sidenav">
            <a href="#about">Machine Learning</a>
            <a href="#services">Deep Learning</a>
           <a href="#clients">IoT</a>
           <a href="#contact">Android App Development</a>
           <a href="#about">React Native</a>
            <a href="#services">React JS</a>
-          <a href="#clients">IoT</a>
-          <a href="#contact">Android App Development</a>
+          <a href="#clients">Full Stack Web Development</a>
+          <a href="#contact">Angular JS, Node JS</a>
+          <a href="#contact">AR, VR</a>
+          <a href="#contact">Big Data Analysis</a>
+          <a href="#contact">Data Science</a>
+          <a href="#contact">Fog Computing</a>
+          <a href="#contact">Distributed Computing</a>
        </div>
+
+       <div class="col-sm-10" style="border: 2px solid grey; border-radius: 10px; padding: 20px;">
+        <div class="row">
+            <div class="col-sm-1">
+            <img src="project_clipart.png" width="20px" height="30px" style="margin-top: 100px;">
+            </div>
+        
+
+        <div class="card col-sm-11">
+            <div class="card-header">
+                <b>Project on Waste Management</b>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title"> <b>Required Skills: </b> Angular JS, Blockchain</h6>
+                <p class="card-text"> To develop a waste management system having a web interface that is to be linked with Blockchain that would give an efficient solution to the problem of waste management. We require an efficient working team to carry out the tasks of a Scrum Master and Web Master. We expect having basic knowledge on <i>Blockchain</i> and a more than average skill on <i>Angular JS</i>.</p>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p style="font-family: Georgia, serif;font-variant: small-caps;color: grey;"><b>Posted by:</b> Abhijith, Student, Information Technology </p>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <a href="#" class="btn btn-primary">Apply</a>
+
+                        <a href="#" class="btn btn-danger">Decline</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+           
+       
+
+       <div class="row">
+            <div class="col-sm-1">
+            <img src="project_clipart.png" width="20px" height="30px" style="margin-top: 100px;">
+            </div>
+        
+
+        <div class="card col-sm-11">
+            <div class="card-header">
+                <b>Project on Fake News Detection</b>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title"> <b>Required Skills: </b> Angular JS, Blockchain</h6>
+                <p class="card-text"> To develop a waste management system having a web interface that is to be linked with Blockchain that would give an efficient solution to the problem of waste management. We require an efficient working team to carry out the tasks of a Scrum Master and Web Master. We expect having basic knowledge on <i>Blockchain</i> and a more than average skill on <i>Angular JS</i>.</p>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p style="font-family: Georgia, serif;font-variant: small-caps;color: grey;"><b>Posted by:</b> Abhijith, Student, Information Technology </p>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <a href="#" class="btn btn-primary">Apply</a>
+
+                        <a href="#" class="btn btn-danger">Decline</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+           
+       </div>
+
+    </div>
+
+
+
+
 </div>
+
 
 </body>
 <div class="empty-div">
@@ -152,8 +258,8 @@
 <footer class="page-footer font-small footer-custom">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">Thiagarajar College of Engineering:
-      <a href="https://tce.edu/"> TCE SIT</a>
+    <div class="footer-copyright text-center py-3" style="font-family: Georgia, serif;font-variant: smallcaps;">Thiagarajar College of Engineering:
+      <a href="https://tce.edu/" style="font-family: Georgia, serif;font-variant: smallcaps;"> TCE SIT</a>
     </div>
     <!-- Copyright -->
   
