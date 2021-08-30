@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+  <html  ng-app="myProjects">
+<head>
+  <script src="angular.min.js"></script>
+  <script src="myProjectsApp.js"></script>
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&family=Sora:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+
+     
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-custom navbar-dark"> 
+            <!-- Brand --> 
+            <a class="navbar-brand" href="#"> <img id="logo" alt="Logo" src="img/logo.png" width="65" height="65"><span>TCE SIT<b>Where Learners Meet</b></h1> </a> 
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Profile</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Project Discussion</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Requests</a> </li>
+              </ul>
+            </div>
+          </nav>
+        
+              
+            <div ng-controller="ShowController as showList">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col"><center><h3>My Projects</h3></center> &nbsp;<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" ng-model="search" size="50"></th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in showList.details| filter:search |orderBy:'name'"><td>{{$index + 1}}</td><td><strong> Name:</strong> {{item.name}}<br> <strong> Description: </strong>{{item.description}}  <br><strong>Project Status:</strong> {{item.status}} </td><td>&nbsp;<a href="{{item.link}}"><center><button  class="btn btn-primary" >Update Status</button></a></center></td></tr>
+                </tbody>
+              </table>
+        
+        </div>
+        
+        <!-- Jquery needed -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="js/scripts.js"></script>
+        
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+            <script>
+                $(window).scroll(function() {
+                    if ($(document).scrollTop() > 50) {
+                        $('.nav').addClass('affix');
+                        console.log("OK");
+                    } else {
+                        $('.nav').removeClass('affix');
+                    }
+                });
+            </script>
+</body>
+<footer class="page-footer font-small footer-custom ">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Thiagarajar College of Engineering:
+    <a href="https://tce.edu/"> TCE SIT</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+</html>
+
+
