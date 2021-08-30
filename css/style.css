@@ -1,29 +1,29 @@
 #logo {
-    vertical-align:middle;
+  vertical-align: middle;
 }
 .navbar-brand span {
-    font-size:2rem;
-    line-height:1.2;
-    font-weight: 200;
-    display:inline-block;
-    vertical-align:middle;
-    padding:0 0 0 15px;
-    color: #fff;
-    font-family: 'Andada Pro', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 15px;
+  color: #fff;
+  font-family: "Andada Pro", sans-serif;
 }
 .navbar-brand b {
-    display:block;
-    font-size:50%;
-    line-height:1;
+  display: block;
+  font-size: 50%;
+  line-height: 1;
 }
 .navbar-nav {
-    margin-left:auto;
+  margin-left: auto;
 }
-.navbar-custom{
-    background-color: #2c5e91;
+.navbar-custom {
+  background-color: #2c5e91;
 }
 
-.footer-custom{
-    background-color: #2c5e91;
-    color: #fff;
+.footer-custom {
+  background-color: #2c5e91;
+  color: #fff;
 }
