@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&family=Sora:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+ 
+  <script>
+    function edit(){
+	 document.getElementById('name').removeAttribute('readonly');
+	 document.getElementById('year').removeAttribute('readonly');
+	 document.getElementById('regno').removeAttribute('readonly');
+   document.getElementById('dept').removeAttribute('readonly');
+   document.getElementById('type').removeAttribute('readonly');
+   document.getElementById('desc').removeAttribute('readonly');
+   document.getElementById('areaofinterest').removeAttribute('readonly');
+   document.getElementById('projects').removeAttribute('readonly');
+   
+
+   
+
+  }
+  function save(){
+	document.getElementById('name').readOnly = true;
+	document.getElementById('year').readOnly = true;
+	document.getElementById('regno').readOnly = true;
+  document.getElementById('dept').readOnly = true;
+  document.getElementById('type').readOnly = true;
+  document.getElementById('desc').readOnly = true;
+  document.getElementById('areaofinterest').readOnly = true;
+  document.getElementById('projects').readOnly = true;
+
+
+
+  }
+  
+
+  </script> 
+  <style>
+  .no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+</style>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"> <img id="logo" alt="Logo" src="img/logo.png" width="65" height="65"><span>TCE
+        SIT<b>Where Learners Meet</b></h1> </a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
+        class="navbar-toggler-icon"></span> </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+        <li class="nav-item active"> <a class="nav-link" href="#">Profile</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Project Discussion</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Requests</a> </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <center>
+      <h1>My Profile </h1>
+      <p>Thiagarajar College of Engineering</p><br>
+
+      <table border="0" >
+        <tr>
+          <td rowspan=6><img src="img/student.jpg" class="img-thumbnail" alt="Profile pic"></td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">
+            <input type="text" id="name" placeholder="NAME" class= "no-border" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">
+            <input type="text" id="dept" placeholder="ZZZ" class= "no-border" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">
+            <input type="text" id="year" placeholder="4th YEAR" class= "no-border" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="font-weight-bold">
+            <input type="text" id="regno" placeholder="000000" class= "no-border" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">
+            <input type="text" id="type" placeholder="Student" class= "no-border" readonly>
+          </td>
+        </tr>
+        
+        <tr>
+          <td><b> Description :</b></td>
+        </tr>
+        
+        <tr>
+          
+          <td colspan=2 >Hi I am a student and my ambition is to be a contributor to society one
+            day!I also do outdoor games like football and cricket at my freetime          
+            <textarea style="display: none" id="desc" rows="3" cols="70"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label><b> Areas of Interest : </b></label>
+          </td>
+          <td>
+            <input type="text" id="areaofinterest" placeholder="Areas" class= "no-border" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label><b> Projects Done : </b></label>
+          </td>
+          <td >
+            <input type="text" id="projects" placeholder="Projects" class= "no-border" readonly>
+          </td>
+        </tr>
+
+      </table>
+      <br><br>
+      <button class="btn btn-primary" type="submit" onclick="edit()" >Edit</button>
+      <button class="btn btn-success" type="submit" onclick="save()">Save</button>
+
+  </div>
+
+</body><br>
+</center>
+
+<footer class="page-footer font-small footer-custom">
+
+
+  <div class="footer-copyright text-center py-3">Thiagarajar College of Engineering:
+    <a href="https://tce.edu/"> TCE SIT</a>
+  </div>
+
+
+</footer>
+
+</html>
