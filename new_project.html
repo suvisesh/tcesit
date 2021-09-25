@@ -48,104 +48,108 @@
   <h3>New Project</h3> <br>
   <form>
     <table align="center">
-      
+
       <tr>
         <td valign="top">
 
-      <label for="validationServer01">Project name : </label>
-    </td>
-    <td valign="top">
-      <input type="text" class="form-control" placeholder="Name"><br>
-    </td>
-    </tr>
-   <tr>
-      <td valign="top">
-
-      <label>Skills Required : </label>
-    </td>
+          <label for="validationServer01">Project name : </label>
+        </td>
         <td valign="top">
-      <input type="text" class="form-control" placeholder="Skills"><br>
-    </td>
-  </tr>
-
-  <tr>
-        <td valign="top">
-      <label>Open To : </label>
-    </td>
+          <input id="proj_name" type="text" class="form-control" placeholder="Name"><br>
+        </td>
+      </tr>
+      <tr>
         <td valign="top">
 
+          <label>Skills Required : </label>
+        </td>
+        <td valign="top">
+          <input id="skills" type="text" class="form-control" placeholder="Skills"><br>
+        </td>
+      </tr>
 
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label">All</label>
-    <br>
+      <tr>
+        <td valign="top">
+          <label>Open To : </label>
+        </td>
+        <td valign="top">
 
-    <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">  IT</label>  <br>
-     
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">CSE</label>  <br>
-      
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">ECE</label>  <br>
-     
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">EEE</label>  <br>
-      
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">Civil</label>  <br>
-     
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">Mechanical</label>  <br>
-      
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="inlineCheckbox2">Mechatronics</label>
-     
-      <br><br>
-    </td>
-  </tr>
 
-  <tr>
-    <td valign="top">     
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label">All</label>
+          <br>
 
-        <label for="validationServer01">Project description : </label>
-      </td>
-          <td valign="top">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="50"></textarea>
-  <br>
+          <input class="form-check-input" type="checkbox">
+          <label id="IT" class="form-check-label" for="inlineCheckbox2"> IT</label> <br>
 
-      </td>
-    </tr>
+          <input id="CSE" class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="inlineCheckbox2">CSE</label> <br>
 
-    <tr>
-      <td valign="top">
+          <input id="ECE" class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="inlineCheckbox2">ECE</label> <br>
 
-        <label for="validationServer01">Wanted before : </label></td>
+          <input id="EEE" class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="inlineCheckbox2">EEE</label> <br>
+
+          <input id="civil" class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="inlineCheckbox2">Civil</label> <br>
+
+          <input id="mech" class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="inlineCheckbox2">Mechanical</label> <br>
+
+          <input id="mect" class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="inlineCheckbox2">Mechatronics</label>
+
+          <br><br>
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+
+          <label for="validationServer01">Project description : </label>
+        </td>
+        <td valign="top">
+          <textarea class="form-control" id="desc" rows="5" cols="50"></textarea>
+          <br>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+
+          <label for="validationServer01">Wanted before : </label>
+        </td>
         <td>
-        <input type="date" placeholder="Description" required>  <br>
-      </td>
-    </tr>
+          <input id="wantedbefore" type="date" placeholder="Description" required> <br>
+        </td>
+      </tr>
 
-    <tr>
-          <td valign="top">
+      <tr>
+        <td valign="top">
 
-        <label>Preference:</label></td>
-            <td valign="top">
+          <label>Preference:</label>
+        </td>
+        <td valign="top">
 
-        
-            <input class="form-check-input" name="flexRadioDefault" type="radio">
-            <label class="form-check-label">Male</label>  <br>
 
-            <input class="form-check-input" name="flexRadioDefault" type="radio">
-            <label class="form-check-label" for="inlineCheckbox2">Female</label>  <br>
+          <input id="male" class="form-check-input" name="flexRadioDefault" type="radio">
+          <label class="form-check-label">Male</label> <br>
 
-            <input class="form-check-input" name="flexRadioDefault" type="radio">
-            <label class="form-check-label" for="inlineCheckbox2">Both</label>  <br>
-          <br></td></tr>
+          <input id="female" class="form-check-input" name="flexRadioDefault" type="radio">
+          <label class="form-check-label" for="inlineCheckbox2">Female</label> <br>
 
-        </table>
-        <center> <input class="btn btn-primary" type="submit" value="Submit"> </center> <br>
+          <input id="both" class="form-check-input" name="flexRadioDefault" type="radio">
+          <label class="form-check-label" for="inlineCheckbox2">Both</label> <br>
+          <br>
+        </td>
+      </tr>
 
-      </form>
+    </table>
+    <center> <input class="btn btn-primary" type="submit" value="Submit"> </center> <br>
+
+  </form>
 </div>
 
 <footer class="page-footer font-small footer-custom">
